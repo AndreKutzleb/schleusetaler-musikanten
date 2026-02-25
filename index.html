@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schleusetaler Musikanten</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f5e7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #d4af37, #c0952f);
+            color: white;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+        .logo {
+            max-width: 60%;
+            height: auto;
+            margin: 0.5rem 0;
+        }
+        .header-subtitle {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0.3rem 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .musicians {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        .musician {
+            text-align: center;
+            max-width: 200px;
+        }
+        .musician-img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .instrument-img {
+            width: 120px;
+            height: auto;
+            margin-top: 0.5rem;
+        }
+        .contact {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 1.5rem auto;
+            text-align: center;
+            max-width: 500px;
+        }
+        .contact a {
+            color: #b22222;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin: 0.5rem 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+        .impressum {
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+        @media (max-width: 600px) {
+            .musicians {
+                gap: 1.5rem;
+            }
+            .logo {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/23e9/e14f/-2e9/3-4dc4-819e-14af68e7f0a0/image.jpg?se=2026-02-25T21%3A19%3A49Z&sp=r&sv=2025-01-05&sr=b&sig=RYMl7SeYxRtzmewJNZieu6Eqa1ShuuNQxrMPbyBjQYI%3D"
+             alt="Schleusetaler Musikanten Logo" class="logo">
+        <div class="header-subtitle">
+            MARIO & MICHAEL<br>
+            Tanz- und Unterhaltungsmusik seit 1987<br>
+            aus Schleusingen / Thüringen
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="musicians">
+            <!-- Mario (links) -->
+            <div class="musician">
+                <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/66/f6/d6/66f6d65c-515c-49b4-8392-00d48fbe06f2/b22ae575-bf4d-4625-8bca-8785d6e01802/96ef71d2-4eac-42a3-9923-e49efccacefd?sv=2025-01-05&st=2026-02-25T20%3A42%3A52Z&se=2026-02-25T21%3A42%3A52Z&sr=b&sp=r&sig=4nommA4fZJUpWYi%2FqTFwmxMXzhjV4w8ZmfrSANciZbs%3D"
+                     alt="Mario" class="musician-img">
+                <img src="https://cdn.pixabay.com/photo/2016/04/06/17/56/keyboard-1311261_960_720.png"
+                     alt="Keyboard" class="instrument-img">
+            </div>
+
+            <!-- Michael (rechts) -->
+            <div class="musician">
+                <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/66/f6/d6/66f6d65c-515c-49b4-8392-00d48fbe06f2/b22ae575-bf4d-4625-8bca-8785d6e01802/962b6d03-4955-4d46-9dc2-b272a2b2f352?sv=2025-01-05&st=2026-02-25T20%3A42%3A52Z&se=2026-02-25T21%3A42%3A52Z&sr=b&sp=r&sig=KEQKcOJTXLokSxHQLVOQmEagmclXOsNHlTquUnOyMWg%3D"
+                     alt="Michael" class="musician-img">
+                <img src="https://cdn.pixabay.com/photo/2013/07/12/18/20/microphone-153219_960_720.png"
+                     alt="Mikrofon" class="instrument-img">
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Kontakt</h2>
+            <a href="tel:+493684141838">Festnetz: 036 841 41838</a>
+            <a href="https://wa.me/4915227698966">Mobil/WhatsApp: 01522 7698966</a>
+            <p>E-Mail: <a href="mailto:Schleusetaler.Musikanten@freenet.de">Schleusetaler.Musikanten@freenet.de</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="impressum">
+            <strong>Impressum</strong><br>
+            Michael Hellmuthhäuser<br>
+            Am Schützenplatz 16<br>
+            98553 Schleusingen<br>
+            E-Mail: <a href="mailto:Schleusetaler.Musikanten@freenet.de" style="color: white;">Schleusetaler.Musikanten@freenet.de</a>
+        </div>
+    </footer>
+</body>
+</html>
