@@ -38,25 +38,31 @@
         .musicians {
             display: flex;
             justify-content: center;
-            gap: 3rem;
+            gap: 1.5rem;
             margin: 1.5rem 0;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 0 10px;
         }
         .musician {
             text-align: center;
-            max-width: 200px;
+            min-width: 200px;
+            flex: 0 0 auto;
         }
         .musician-img {
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             object-fit: cover;
+            margin: 0 auto;
+            display: block;
         }
         .instrument-img {
-            width: 120px;
+            width: 150px;
             height: auto;
-            margin-top: 0.5rem;
+            margin: 0.5rem auto;
+            display: block;
         }
         .contact {
             background-color: white;
@@ -86,11 +92,12 @@
             line-height: 1.4;
         }
         @media (max-width: 600px) {
-            .musicians {
-                gap: 1.5rem;
+            .musician-img {
+                width: 150px;
+                height: 150px;
             }
-            .logo {
-                max-width: 80%;
+            .instrument-img {
+                width: 120px;
             }
         }
     </style>
@@ -112,7 +119,7 @@
             <div class="musician">
                 <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/66/f6/d6/66f6d65c-515c-49b4-8392-00d48fbe06f2/b22ae575-bf4d-4625-8bca-8785d6e01802/96ef71d2-4eac-42a3-9923-e49efccacefd?sv=2025-01-05&st=2026-02-25T20%3A42%3A52Z&se=2026-02-25T21%3A42%3A52Z&sr=b&sp=r&sig=4nommA4fZJUpWYi%2FqTFwmxMXzhjV4w8ZmfrSANciZbs%3D"
                      alt="Mario" class="musician-img">
-                <img src="https://cdn.pixabay.com/photo/2016/04/06/17/56/keyboard-1311261_960_720.png"
+                <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/66/f6/d6/66f6d65c-515c-49b4-8392-00d48fbe06f2/b22ae575-bf4d-4625-8bca-8785d6e01802/20bc7d99-9581-4b84-9171-c9e5df827686?sv=2025-01-05&st=2026-02-25T21%3A23%3A59Z&se=2026-02-25T22%3A23%3A59Z&sr=b&sp=r&sig=sTGzaKWPw0a6HDudV9amiUIK7rko9JK9yq2tXifODQQ%3D"
                      alt="Keyboard" class="instrument-img">
             </div>
 
@@ -120,7 +127,7 @@
             <div class="musician">
                 <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/66/f6/d6/66f6d65c-515c-49b4-8392-00d48fbe06f2/b22ae575-bf4d-4625-8bca-8785d6e01802/962b6d03-4955-4d46-9dc2-b272a2b2f352?sv=2025-01-05&st=2026-02-25T20%3A42%3A52Z&se=2026-02-25T21%3A42%3A52Z&sr=b&sp=r&sig=KEQKcOJTXLokSxHQLVOQmEagmclXOsNHlTquUnOyMWg%3D"
                      alt="Michael" class="musician-img">
-                <img src="https://cdn.pixabay.com/photo/2013/07/12/18/20/microphone-153219_960_720.png"
+                <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/66/f6/d6/66f6d65c-515c-49b4-8392-00d48fbe06f2/b22ae575-bf4d-4625-8bca-8785d6e01802/322bf899-aba9-4e8f-a696-d6652ddd43b7?sv=2025-01-05&st=2026-02-25T21%3A23%3A59Z&se=2026-02-25T22%3A23%3A59Z&sr=b&sp=r&sig=%2FPfMZO2l2LjbsdRdsKMN8qgIE6EtFB3A%2BHVxHxn5B8s%3D"
                      alt="Mikrofon" class="instrument-img">
             </div>
         </section>
