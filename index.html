@@ -17,18 +17,17 @@
             background: linear-gradient(135deg, #d4af37, #c0952f);
             color: white;
             text-align: center;
-            padding: 0.5rem 0;
+            padding: 1rem 0;
         }
         .logo {
-            max-width: 60%;
+            max-width: 80%;
             height: auto;
-            margin: 0.5rem 0;
+            margin: 1rem 0;
         }
         .header-subtitle {
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: bold;
-            margin: 0.3rem 0;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            margin: 0.5rem 0;
         }
         .container {
             max-width: 900px;
@@ -38,16 +37,13 @@
         .musicians {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin: 1.5rem 0;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            padding: 0 10px;
+            gap: 3rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
         }
         .musician {
             text-align: center;
-            min-width: 200px;
-            flex: 0 0 auto;
+            max-width: 200px;
         }
         .musician-img {
             border-radius: 8px;
@@ -55,21 +51,18 @@
             width: 180px;
             height: 180px;
             object-fit: cover;
-            margin: 0 auto;
-            display: block;
         }
         .instrument-img {
-            width: 150px;
+            width: 120px;
             height: auto;
-            margin: 0.5rem auto;
-            display: block;
+            margin-top: 0.5rem;
         }
         .contact {
             background-color: white;
             padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin: 1.5rem auto;
+            margin: 2rem auto;
             text-align: center;
             max-width: 500px;
         }
@@ -92,20 +85,19 @@
             line-height: 1.4;
         }
         @media (max-width: 600px) {
+            .musicians {
+                gap: 1.5rem;
+            }
             .musician-img {
                 width: 150px;
                 height: 150px;
-            }
-            .instrument-img {
-                width: 120px;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/23e9/e14f/-2e9/3-4dc4-819e-14af68e7f0a0/image.jpg?se=2026-02-25T21%3A19%3A49Z&sp=r&sv=2025-01-05&sr=b&sig=RYMl7SeYxRtzmewJNZieu6Eqa1ShuuNQxrMPbyBjQYI%3D"
-             alt="Schleusetaler Musikanten Logo" class="logo">
+        <img src="images/logo.jpg" alt="Schleusetaler Musikanten Logo" class="logo">
         <div class="header-subtitle">
             MARIO & MICHAEL<br>
             Tanz- und Unterhaltungsmusik seit 1987<br>
@@ -117,18 +109,14 @@
         <section class="musicians">
             <!-- Mario (links) -->
             <div class="musician">
-                <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/66/f6/d6/66f6d65c-515c-49b4-8392-00d48fbe06f2/b22ae575-bf4d-4625-8bca-8785d6e01802/96ef71d2-4eac-42a3-9923-e49efccacefd?sv=2025-01-05&st=2026-02-25T20%3A42%3A52Z&se=2026-02-25T21%3A42%3A52Z&sr=b&sp=r&sig=4nommA4fZJUpWYi%2FqTFwmxMXzhjV4w8ZmfrSANciZbs%3D"
-                     alt="Mario" class="musician-img">
-                <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/66/f6/d6/66f6d65c-515c-49b4-8392-00d48fbe06f2/b22ae575-bf4d-4625-8bca-8785d6e01802/20bc7d99-9581-4b84-9171-c9e5df827686?sv=2025-01-05&st=2026-02-25T21%3A23%3A59Z&se=2026-02-25T22%3A23%3A59Z&sr=b&sp=r&sig=sTGzaKWPw0a6HDudV9amiUIK7rko9JK9yq2tXifODQQ%3D"
-                     alt="Keyboard" class="instrument-img">
+                <img src="images/mario.jpg" alt="Mario" class="musician-img">
+                <img src="images/keyboard.jpg" alt="Keyboard" class="instrument-img">
             </div>
 
             <!-- Michael (rechts) -->
             <div class="musician">
-                <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/66/f6/d6/66f6d65c-515c-49b4-8392-00d48fbe06f2/b22ae575-bf4d-4625-8bca-8785d6e01802/962b6d03-4955-4d46-9dc2-b272a2b2f352?sv=2025-01-05&st=2026-02-25T20%3A42%3A52Z&se=2026-02-25T21%3A42%3A52Z&sr=b&sp=r&sig=KEQKcOJTXLokSxHQLVOQmEagmclXOsNHlTquUnOyMWg%3D"
-                     alt="Michael" class="musician-img">
-                <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/66/f6/d6/66f6d65c-515c-49b4-8392-00d48fbe06f2/b22ae575-bf4d-4625-8bca-8785d6e01802/322bf899-aba9-4e8f-a696-d6652ddd43b7?sv=2025-01-05&st=2026-02-25T21%3A23%3A59Z&se=2026-02-25T22%3A23%3A59Z&sr=b&sp=r&sig=%2FPfMZO2l2LjbsdRdsKMN8qgIE6EtFB3A%2BHVxHxn5B8s%3D"
-                     alt="Mikrofon" class="instrument-img">
+                <img src="images/michael.jpg" alt="Michael" class="musician-img">
+                <img src="images/microphone.jpg" alt="Mikrofon" class="instrument-img">
             </div>
         </section>
 
